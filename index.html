@@ -1,4 +1,1112 @@
-<h1>Hello world!
-    <br>
-    <small>Welcome to the MCM website!</small>
-</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNS69VJVZG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NNS69VJVZG');
+  </script>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="This website hosts our paper ``Motion Consistency Model: Accelerating Video Diffusion with Disentangled
+            Motion-Appearance Distillation''.">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Motion Consistency Model</title>
+  <link rel="icon" type="image/x-icon" href="static/images/banner.ico">
+  <link
+    href="https://fonts.googleapis.com/css?family=Patrick+Hand|Google+Sans|Noto+Sans|Castoro|Open+Sans&effect=shadow-multiple|emboss|3d"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body gray-bg">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Motion Consistency Model: Accelerating Video Diffusion with
+              Disentangled
+              Motion-Appearance Distillation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://www.yhzhai.com/">Yuanhao Zhai</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/site/kevinlin311tw/">Kevin Lin</a><sup>2</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://zyang-ur.github.io">Zhengyuan Yang</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=WR875gYAAAAJ">Linjie Li</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://jianfengwang.me">Jianfeng Wang</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=legkbM0AAAAJ">Chung-Ching Lin</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cse.buffalo.edu/~doermann/">David Doermann</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cse.buffalo.edu/~jsyuan/">Junsong Yuan</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=cDcWXuIAAAAJ">Lijuan Wang</a><sup>2</sup>
+              </span>
+
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>State University of New York at Buffalo,</span>&nbsp;
+              <span class="author-block"><sup>2</sup>Microsoft</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <!-- <span class="link-block"> -->
+                <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" -->
+                <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                <!-- <span class="icon"> -->
+                <!-- <i class="fas fa-file-pdf"></i> -->
+                <!-- </span> -->
+                <!-- <span>Paper</span> -->
+                <!-- </a> -->
+                <!-- </span> -->
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block"> -->
+                <!-- <a href="static/pdfs/supplementary_material.pdf" target="_blank" -->
+                <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                <!-- <span class="icon"> -->
+                <!-- <i class="fas fa-file-pdf"></i> -->
+                <!-- </span> -->
+                <!-- <span>Supplementary</span> -->
+                <!-- </a> -->
+                <!-- </span> -->
+
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2406.06890" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/yhZhai/mcm" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- HF checkpoint -->
+                <!-- <span class="link-block"> -->
+                <!-- <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark"> -->
+                <!-- <span class="icon"> -->
+                <!-- <img src="static/images/hf.png" alt="HuggingFace checkpoint"> -->
+                <!-- </span> -->
+                <!-- <span>Checkpoint (coming)</span> -->
+                <!-- </a> -->
+                <!-- </span> -->
+                <!-- HF demo -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf.png" alt="HuggingFace Demo">
+                    </span>
+                    <span>Demo (coming)</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="content has-text-justified">
+            <p>
+              <strong>TL;DR</strong>: Our motion consistency model not only accelerates text2video diffusion model
+              sampling process, but also can
+              benefit from an additional high-quality <i><u>image</u></i> dataset to improve the frame quality of
+              generated videos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <table class="video-table" cellspacing="0" cellpadding="0" style="width: 95%; margin: 0 auto;">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Teacher (<a href="https://arxiv.org/abs/2308.06571">ModelScopeT2V</a>)<br>
+          <div class="high-steps">50 steps</div>
+        </th>
+        <th>Ours+Webvid<br>
+          <div class="low-steps">4 steps</div>
+        </th>
+        <th>Ours+LAION-aesthetic<br>
+          <div class="low-steps">4 steps</div>
+        </th>
+        <th>Ours+Anime<br>
+          <div class="low-steps">4 steps</div>
+        </th>
+        <th>Ours+Realistic<br>
+          <div class="low-steps">4 steps</div>
+        </th>
+        <th>Ours+3D Cartoon<br>
+          <div class="low-steps">4 steps</div>
+        </th>
+      </tr>
+    <tbody>
+      <tr>
+        <td class="text-column">
+          Aerial uhd 4k view. mid-air flight over fresh and clean mountain river at sunny summer morning. Green trees
+          and sun
+          rays on horizon. Direct on sun.
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example1/teacher.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example1/webvid.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example1/laion.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example1/toonyou.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example1/realvision.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example1/disney.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-column">
+          Back of woman in shorts going near pure creek in beautiful mountains.
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example2/teacher_Back_of_woman_in_shorts_going_near_pure_creek-d2af.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example2/webvid_Back_of_woman_in_shorts_going_near_pure_creek-d2af.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example2/laion_Back_of_woman_in_shorts_going_near_pure_creek-d2af.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example2/toonyou_Back_of_woman_in_shorts_going_near_pure_creek-d2af.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source
+              src="static/videos/teaser/example2/realvision_Back_of_woman_in_shorts_going_near_pure_creek-d2af.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example2/disney_Back_of_woman_in_shorts_going_near_pure_creek-d2af.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+      <tr>
+        <td class="text-column">
+          Misty mountain landscape
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example5/teacher_Misty_mountain_landscape-1056.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example5/webvid_Misty_mountain_landscape-1056.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example5/laion_Misty_mountain_landscape-1056.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example5/toonyou_Misty_mountain_landscape-1056.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example5/realvision_Misty_mountain_landscape-1056.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example5/disney_Misty_mountain_landscape-1056.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-column">
+          A rotating pandoro (a traditional italian sweet yeast bread, most popular around christmas and new year) being
+          eaten in
+          time-lapse.
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example3/teacher_A_rotating_pandoro_a_traditional_italian_swee-d408.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example3/webvid_A_rotating_pandoro_a_traditional_italian_swee-d408.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example3/laion_A_rotating_pandoro_a_traditional_italian_swee-d408.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example3/toonyou_A_rotating_pandoro_a_traditional_italian_swee-d408.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source
+              src="static/videos/teaser/example3/realvision_A_rotating_pandoro_a_traditional_italian_swee-d408.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example3/disney_A_rotating_pandoro_a_traditional_italian_swee-d408.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-column">
+          Slow motion avocado with a stone falls and breaks into 2 parts with splashes
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example4/teacher_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example4/webvid_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example4/laion_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example4/toonyou_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source
+              src="static/videos/teaser/example4/realvision_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+            x5-video-player-type="h5" x5-video-player-fullscreen="true">
+            <source src="static/videos/teaser/example4/disney_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+              type="video/mp4">
+          </video>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="footnotes">
+    <p><sup>*</sup>For anime, realistic, and 3D cartoon styles, we leverage generated 500k image-caption datasets using
+      fine-tuned stable diffusion models <a href="https://civitai.com/models/30240/toonyou">ToonYou beta 6</a>, <a
+        href="https://civitai.com/models/4201/realistic-vision-v60-b1">RealisticVision v6</a>, and <a
+        href="https://civitai.com/models/75650/disney-pixar-cartoon-type-b">Disney pixar cartoon</a>, respectively.</p>
+  </div>
+
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Image diffusion distillation achieves high-fidelity generation with very few sampling steps. However,
+              directly applying
+              these techniques to video models results in unsatisfied frame quality. This issue arises from the limited
+              frame
+              appearance quality in public video datasets, affecting the performance of both teacher and student video
+              diffusion
+              models. Our study aims to improve video diffusion distillation and meanwhile enabling the student model to
+              improve frame
+              appearance using the abundant high-quality image data. To this end, we propose motion consistency models
+              (MCM), a
+              single-stage video diffusion distillation method that disentangles motion and appearance learning.
+              Specifically, MCM
+              involves a video consistency model that distills motion from the video teacher model, and an image
+              discriminator that
+              boosts frame appearance to match high-quality image data. However, directly combining these components
+              leads to two
+              significant challenges: a conflict in frame learning objectives, where video distillation learns from
+              low-quality video
+              frames while the image discriminator targets high-quality images, and training-inference discrepancies due
+              to the
+              differing quality of video samples used during training and inference. To address these challenges, we
+              introduce
+              disentangled motion distillation and mixed trajectory distillation. The former applies the distillation
+              objective solely
+              to the motion representation, while the latter mitigates training-inference discrepancies by mixing
+              distillation
+              trajectories from both the low- and high-quality video domains. Extensive experiments show that our MCM
+              achieves
+              state-of-the-art video diffusion distillation performance. Additionally, our method can enhance frame
+              quality in video
+              diffusion models, producing frames with high aesthetic value or specific styles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="section" id="Method">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Method</h2>
+      <section class="hero method">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <h3 class="title">Motivation</h3>
+            <img id="motivation" autoplay muted preload webkit-playsinline="true" playsinline x5-video-player-type="h5"
+              x5-video-player-fullscreen="true" loop webkit-playsinline="true" playsinline x5-video-player-type="h5"
+              x5-video-player-fullscreen="true" height="100%" src="./static/images/illustration.png"
+              style="width:100%;height:100%;">
+            <p>
+              Our motion consistency model not only distill the motion prior
+              from the teacher to accelerate sampling, but also can benefit
+              from an additional high-quality image dataset to improve the frame
+              quality of generated videos.
+            </p>
+            <h3 class="title">Framework</h3>
+            <div class="hero-body">
+              <img id="method" autoplay muted preload webkit-playsinline="true" playsinline x5-video-player-type="h5"
+                x5-video-player-fullscreen="true" loop webkit-playsinline="true" playsinline x5-video-player-type="h5"
+                x5-video-player-fullscreen="true" height="100%" src="./static/images/framework.png"
+                style="width:100%;height:100%;">
+              <p>
+                <strong>Left</strong>: framework overview. Our motion consistency model features disentangled
+                motion-appearance distillation, where motion is
+                learned via the motion consistency distillation loss \(\mathcal{L}_{\text{MCD}}\), and the appearance is
+                learned with the
+                frame adversarial objective \(\mathcal{L}_{\text{adv}}^{\text{G}}\).
+              </p>
+              <p>
+                <strong>Right</strong>: mixed trajectory distillation. We
+                simulate the inference-time ODE trajectory using student-generated video (bottom <span
+                  style="color: rgb(28, 175, 88);">green</span> line),
+                which is mixed with the real video ODE trajectory (top <span
+                  style="color: rgb(28, 175, 88);">green</span> line) for consistency distillation
+                training.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+
+  <!-- ModelScope -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Qualitative Comparison on Diffusion Distillation (ModelScopeT2V teacher)</h2>
+        <table class="video-table" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Teacher (<a href="https://arxiv.org/abs/2308.06571">ModelScopeT2V</a>)<br>
+                <div class="high-steps">50 steps</div>
+              </th>
+              <th>Latent consistency model<br>
+                <div class="low-steps">1 step</div>
+              </th>
+              <th>Ours + Realistic<br>
+                <div class="low-steps">1 step</div>
+              </th>
+            </tr>
+          <tbody>
+            <tr>
+              <td class="text-column">
+                Slow motion avocado with a stone falls and breaks into 2 parts with splashes
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/1step/teacher_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/1step/lcm_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/1step/ours_Slow_motion_avocado_with_a_stone_falls_and_br-94a8.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-column">
+                Slow motion of delicious salmon sachimi set with green vegetables leaves served on wood plate. make
+                homemade japanese
+                food at home.-dan
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/1step/teacher_Slow_motion_of_delicious_salmon_sachimi_set_w-4e97.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/1step/lcm_Slow_motion_of_delicious_salmon_sachimi_set_w-4e97.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/1step/ours_Slow_motion_of_delicious_salmon_sachimi_set_w-4e97.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <!-- --- -->
+        <table class="video-table" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Teacher (<a href="https://arxiv.org/abs/2308.06571">ModelScopeT2V</a>)<br>
+                <div class="high-steps">50 steps</div>
+              </th>
+              <th>Latent consistency model<br>
+                <div class="low-steps">2 steps</div>
+              </th>
+              <th>Ours + Animate/3D Cartoon<br>
+                <div class="low-steps">2 steps</div>
+              </th>
+            </tr>
+          <tbody>
+            <tr>
+              <td class="text-column">
+                Blooming meadow panorama zoom-out shot heavenly clouds and upcoming thunderstorm in mountain range harz,
+                germany.
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/2step/teacher_Blooming_meadow_panorama_zoomout_shot_heavenl-2877.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/2step/lcm_Blooming_meadow_panorama_zoomout_shot_heavenl-2877.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/2step/ours_Blooming_meadow_panorama_zoomout_shot_heavenl-2877_anime.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-column">
+                Slow motion of delicious salmon sachimi set with green vegetables leaves served on wood plate. make
+                homemade
+                japanese
+                food at home.-dan
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/2step/teacher_Earth_covered_by_skyscrapers_technology_relat-f9c0.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/2step/lcm_Earth_covered_by_skyscrapers_technology_relat-f9c0.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/2step/ours_Earth_covered_by_skyscrapers_technology_relat-f9c0_3d.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <!-- --- -->
+        <table class="video-table" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Teacher (<a href="https://arxiv.org/abs/2308.06571">ModelScopeT2V</a>)<br>
+                <div class="high-steps">50 steps</div>
+              </th>
+              <th>Latent consistency model<br>
+                <div class="low-steps">4 steps</div>
+              </th>
+              <th>Ours + LAION-aes/3D Cartoon<br>
+                <div class="low-steps">4 steps</div>
+              </th>
+            </tr>
+          <tbody>
+            <tr>
+              <td class="text-column">
+                Great blue heron clearing his feather on his face
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/4step/teacher_Great_blue_heron_clearing_his_feather_on_his_-49e9.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/4step/lcm_Great_blue_heron_clearing_his_feather_on_his_-49e9.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/4step/ours_Great_blue_heron_clearing_his_feather_on_his_-49e9.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-column">
+                Observatory near to church in a countryside. helicopter camera flaying above the observatory witch is
+                standing next to
+                the church in beautiful landscape.
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/4step/teacher_Observatory_near_to_church_in_a_countryside_h-45f7.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/4step/lcm_Observatory_near_to_church_in_a_countryside_h-45f7.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                  x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                  <source
+                    src="static/videos/qa-modelscope/4step/ours_Observatory_near_to_church_in_a_countryside_h-45f7.mp4"
+                    type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+
+      </div>
+    </div>
+  </section>
+  <!-- End ModelScope video -->
+
+
+  <!-- Animatediff -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <h2 class="title is-3">Qualitative Comparison on Diffusion Distillation (AnimateDiff teacher)</h2>
+      <table class="video-table no-border" cellspacing="0" cellpadding="0" style="width: 100%;margin: 0 auto;">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Teacher (<a href="https://arxiv.org/abs/2307.04725">AnimateDiff</a>)<br>
+              <div class="high-steps">50 steps</div>
+            </th>
+            <th></th>
+            <th><a href="https://arxiv.org/abs/2211.01095">DPM++</a>
+            </th>
+            <th><a href="https://arxiv.org/abs/2307.04725">AnimateLCM</a>
+            </th>
+            <th><a href="https://arxiv.org/abs/2403.12706">AnimateDiff Lightning</a>
+            </th>
+            <th>Ours
+            </th>
+          </tr>
+        <tbody>
+          <tr>
+            <td class="text-column" rowspan="2">
+              A young woman in a yellow sweater uses vr glasses, sitting on the shore of a pond on a background of dark
+              waves. a
+              strong wind develops her hair, the sun's rays are reflected from the water.
+            </td>
+            <td rowspan="2">
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source
+                  src="static/videos/qa-animatediff/teacher_A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td class="text-column-steps" style="text-align: right;">
+              <div class="low-steps">2 steps</div>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/dpm++2_A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/alm_2_A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/adl_2_A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/ours_2_A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-column-steps" style="text-align: right;">
+              <div class="low-steps">4 steps</div>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/dpm++_4A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/alm_4_A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/afl_4A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/ours_4_A_young_woman_in_a_yellow_sweater_uses_vr_gla-9368.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <!-- --- -->
+      <table class="video-table no-border" cellspacing="0" cellpadding="0" style="width: 100%;margin: 0 auto;">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Teacher (<a href="https://arxiv.org/abs/2307.04725">AnimateDiff</a>)<br>
+              <div class="high-steps">50 steps</div>
+            </th>
+            <th></th>
+            <th><a href="https://arxiv.org/abs/2211.01095">DPM++</a>
+            </th>
+            <th><a href="https://arxiv.org/abs/2307.04725">AnimateLCM</a>
+            </th>
+            <th><a href="https://arxiv.org/abs/2403.12706">AnimateDiff Lightning</a>
+            </th>
+            <th>Ours
+            </th>
+          </tr>
+        <tbody>
+          <tr>
+            <td class="text-column" rowspan="2">
+              Female running at sunset. healthy fitness concept
+            </td>
+            <td rowspan="2">
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source
+                  src="static/videos/qa-animatediff/teacher_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td class="text-column-steps" style="text-align: right;">
+              <div class="low-steps">2 steps</div>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/dpm++2_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/alm_2_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/adl_2_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/ours_2_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-column-steps" style="text-align: right;">
+              <div class="low-steps">4 steps</div>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source
+                  src="static/videos/qa-animatediff/dpm++_4_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/alm_4_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/adl_4_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline
+                x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                <source src="static/videos/qa-animatediff/ours_4_Female_running_at_sunset_healthy_fitness_conc-6574.mp4"
+                  type="video/mp4">
+              </video>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="footnotes">
+        <p><sup>*</sup>For better visualization purpose, we use <a
+            href="https://civitai.com/models/4201/realistic-vision-v60-b1">RealisticVision v6</a> as the AnimateDiff
+          base model. For quantitative comparison, we follow <a href="https://arxiv.org/abs/2307.04725">AnimateLCM</a>
+          to use plain stable diffusion v1.5 as the base model.</p>
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
+
+
+
+  <section class="section hero is-light" id="quantitative">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Quantitative Comparison</h2>
+      <section class="hero method">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <h3 class="title">Diffusion Distillation Comparison</h3>
+            <img id="motivation" autoplay muted preload webkit-playsinline="true" playsinline x5-video-player-type="h5"
+              x5-video-player-fullscreen="true" loop webkit-playsinline="true" playsinline x5-video-player-type="h5"
+              x5-video-player-fullscreen="true" height="100%" src="static/images/webvidmini.png"
+              style="width:100%;height:100%;">
+            <p>
+              Video diffusion distillation comparison on the WebVid mini validation set. We achieve the best FVD and
+              CLIPSIM using 1, 2, and 4 sampling steps.
+            </p>
+            <hr>
+
+            <img id="motivation" autoplay muted preload webkit-playsinline="true" playsinline x5-video-player-type="h5"
+              x5-video-player-fullscreen="true" loop webkit-playsinline="true" playsinline x5-video-player-type="h5"
+              x5-video-player-fullscreen="true" height="100%" src="static/images/msrvtt.png"
+              style="width:100%;height:100%;">
+            <p>
+              Zero-shot video diffusion distillation comparison on the MSRVTT validation set. We achieve the best FVD
+              and CLIPSIM using 1, 2, and 4 sampling steps.
+            </p>
+            <hr>
+
+            <h3 class="title">Frame Quality Improvement Comparison</h3>
+            <div class="hero-body">
+              <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                <img id="method" autoplay muted preload webkit-playsinline="true" playsinline x5-video-player-type="h5"
+                  x5-video-player-fullscreen="true" loop webkit-playsinline="true" playsinline x5-video-player-type="h5"
+                  x5-video-player-fullscreen="true" height="100%" src="static/images/frame-quality.png"
+                  style="width: 70%; height: auto;">
+              </div>
+              <p>
+                Compared with two-stage method, our method can better align the frame quality with the image data,
+                achieving lower FID.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{zhai2024motion,
+  title={Motion Consistency Model: Accelerating Video Diffusion with Disentangled
+  Motion-Appearance Distillation},
+  author={Zhai, Yuanhao and Lin, Kevin and Yang, Zhengyuan and Li, Linjie and Wang, Jianfeng and Lin, Chung-Ching and Doermann, David and Yuan, Junsong and Wang, Lijuan},
+  year={2024},
+  journal={arXiv preprint arXiv:2406.06890},
+  website={https://yhzhai.github.io/mcm/},
+}</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
