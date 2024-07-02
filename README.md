@@ -14,6 +14,8 @@
 
 ## 🔥 News
 
+**[06/2024]** Our MCM achieves strong performance (using 4 sampling steps) on the [ChronoMagic-Bench](https://pku-yuangroup.github.io/ChronoMagic-Bench/)! Check out the leaderboard [here](https://huggingface.co/spaces/BestWishYsh/ChronoMagic-Bench).
+
 **[06/2024]** Training code, [pre-trained checkpoint](https://huggingface.co/yhzhai/mcm), [Gradio demo](https://huggingface.co/spaces/yhzhai/mcm), and [Colab demo](https://colab.research.google.com/drive/1ouGbIZA5092hF9ZMHO-AchCr_L3algTL?usp=sharing) release.
 
 **[06/2024]** [Paper](https://arxiv.org/abs/2406.06890) and [project page](https://yhzhai.github.io/mcm/) release.
