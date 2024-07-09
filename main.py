@@ -53,7 +53,7 @@ from diffusers import (
     UNetMotionModel,
 )
 from diffusers.optimization import get_scheduler
-from diffusers.pipelines.animatediff.pipeline_animatediff import tensor2vid
+# from diffusers.pipelines.animatediff.pipeline_animatediff import tensor2vid
 from diffusers.utils import check_min_version, export_to_video, is_wandb_available
 from diffusers.utils.import_utils import is_xformers_available
 from einops import rearrange, repeat

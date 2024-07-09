@@ -7,6 +7,7 @@ import subprocess
 from pathlib import Path
 from typing import Dict, List
 
+import numpy as np
 import torch
 import torchvision.transforms.functional as TF
 from azfuse import File
@@ -158,3 +159,24 @@ def sample_and_decode(latent, vae, num_frames, tsn_num_frames, weight_dtype):
     sampled_latent = sampled_latent.to(dtype=weight_dtype)
     pixel = vae.decode(sampled_latent).sample
     return pixel
+
+
+def tensor2vid(video: torch.Tensor, processor, output_type="np"):
+    batch_size, channels, num_frames, height, width = video.shape
+    outputs = []
+    for batch_idx in range(batch_size):
+        batch_vid = video[batch_idx].permute(1, 0, 2, 3)
+        batch_output = processor.postprocess(batch_vid, output_type)
+
+        outputs.append(batch_output)
+
+    if output_type == "np":
+        outputs = np.stack(outputs)
+
+    elif output_type == "pt":
+        outputs = torch.stack(outputs)
+
+    elif not output_type == "pil":
+        raise ValueError(f"{output_type} does not exist. Please choose one of ['np', 'pt', 'pil']")
+
+    return outputs
