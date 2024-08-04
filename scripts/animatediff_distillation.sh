@@ -5,7 +5,7 @@ export VIDEO_DATA_PATH=/path/to/video/data
 
 export GPUS=8  # number of GPUs
 export MASTER_PORT=29500  # port for distributed training
-export RUN_NAME=modelscopet2v_distillation  # name of the run
+export RUN_NAME=animatediff_distillation  # name of the run
 export OUTPUT_DIR=work_dirs/$RUN_NAME  # directory to save the model checkpoints
 
 accelerate launch --num_machines 1 --num_processes $GPUS \
