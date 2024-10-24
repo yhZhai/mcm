@@ -216,8 +216,122 @@
     </div>
   </section>
 
+  <section class="hero is-small">
+    <div class="hero-body">
+      <h2 class="title is-3" style="text-align: center;">4-step generation results</h2>
+      <h3 class="subtitle is-3" style="text-align: center;">High-resolution video</h3>
+
+<!-- Inserted Code Starts Here -->
+<style>
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    justify-content: center;
+    /* Center the videos horizontally */
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Limit the maximum width for better layout */
+  }
+
+  .square-videos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    /* Add spacing between square and rectangular videos */
+  }
+
+  .square-videos .video {
+    margin-bottom: 20px;
+    /* Spacing between square videos */
+    width: 100%;
+    max-width: 250px;
+    /* Adjust as needed */
+  }
+
+  .rect-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Spacing between rectangular videos */
+  }
+
+  .rect-videos .video {
+    width: 100%;
+    max-width: 250px;
+    /* Adjust as needed */
+  }
+
+  /* Make videos responsive */
+  .video-container .video {
+    height: auto;
+  }
+
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 800px) {
+    .video-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .square-videos {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .rect-videos {
+      justify-content: center;
+    }
+
+    .rect-videos .video {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<div class="video-container">
+  <!-- Square Videos Column -->
+  <div class="square-videos">
+    <video class="video" autoplay loop muted preload playsinline>
+      <source src="static/videos/high-res-teaser/1.mp4" type="video/mp4">
+    </video>
+    <video class="video" autoplay loop muted preload playsinline>
+      <source src="static/videos/high-res-teaser/2.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!-- Rectangular Videos -->
+  <div class="rect-videos">
+    <video class="video" autoplay loop muted preload playsinline>
+      <source src="static/videos/high-res-teaser/3.mp4" type="video/mp4">
+    </video>
+    <video class="video" autoplay loop muted preload playsinline>
+      <source src="static/videos/high-res-teaser/4.mp4" type="video/mp4">
+    </video>
+    <video class="video" autoplay loop muted preload playsinline>
+      <source src="static/videos/high-res-teaser/5.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+<!-- Inserted Code Ends Here -->
+
+
+      <h3 class="subtitle is-3" style="text-align: center;">Pose-conditioned video</h4>
+        <video class="video" autoplay loop muted preload webkit-playsinline="true" playsinline x5-video-player-type="h5"
+          x5-video-player-fullscreen="true">
+          <source src="static/videos/high-res-teaser/pose.mp4" type="video/mp4">
+        </video>
+
+      <div class="footnotes">
+        <p><sup>*</sup><a
+            href="https://civitai.com/models/4201/realistic-vision-v60-b1">epiCReealism</a> is used as the AnimateDiff
+          base model.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Teaser video-->
+  <h3 class="subtitle is-3" style="text-align: center;">Frame quality improvement</h3>
   <table class="video-table" cellspacing="0" cellpadding="0" style="width: 95%; margin: 0 auto;">
     <thead>
       <tr>
