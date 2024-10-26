@@ -223,97 +223,102 @@
 
 <!-- Inserted Code Starts Here -->
 <style>
-  .video-container {
+  .video-row {
     display: flex;
-    flex-wrap: wrap;
-    /* Allow wrapping on smaller screens */
     justify-content: center;
     /* Center the videos horizontally */
-    align-items: flex-start;
+    align-items: center;
+    /* Center the videos vertically */
     margin: 0 auto;
-    max-width: 1200px;
-    /* Limit the maximum width for better layout */
+    max-width: 100%;
+    gap: 10px;
+    /* Minimal spacing between videos */
   }
 
-  .square-videos {
+  /* Video Containers with proportional flex-basis */
+  .video-container {
     display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    /* Add spacing between square and rectangular videos */
+    align-items: center;
+    justify-content: center;
   }
 
-  .square-videos .video {
-    margin-bottom: 20px;
-    /* Spacing between square videos */
-    width: 100%;
-    max-width: 250px;
-    /* Adjust as needed */
+  /* Square Videos */
+  .video-container.square {
+    flex: 0 1 25%;
+    /* 25% width */
   }
 
-  .rect-videos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    /* Spacing between rectangular videos */
+  /* Rectangular Videos */
+  .video-container.rect {
+    flex: 0 1 16.6667%;
+    /* Approximately 16.67% width */
   }
 
-  .rect-videos .video {
-    width: 100%;
-    max-width: 250px;
-    /* Adjust as needed */
-  }
-
-  /* Make videos responsive */
-  .video-container .video {
+  .video {
+    max-height: 768px;
+    /* All videos have the same height */
+    width: auto;
     height: auto;
   }
 
-  /* Media Queries for Responsiveness */
-  @media screen and (max-width: 800px) {
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .video-container.square {
+      flex: 0 1 20%;
+      /* Adjust widths to fit smaller screens */
+    }
+
+    .video-container.rect {
+      flex: 0 1 13.3333%;
+    }
+  }
+
+  @media (max-width: 800px) {
     .video-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .square-videos {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-
-    .rect-videos {
-      justify-content: center;
-    }
-
-    .rect-videos .video {
-      margin-bottom: 20px;
+      flex: 0 1 18%;
+      /* Further adjust for very small screens */
     }
   }
 </style>
 
-<div class="video-container">
-  <!-- Square Videos Column -->
-  <div class="square-videos">
-    <video class="video" autoplay loop muted preload playsinline>
+<div class="video-row">
+  <!-- Video 1 (Square) -->
+  <div class="video-container square">
+    <video class="video" autoplay loop muted playsinline>
       <source src="static/videos/high-res-teaser/1.mp4" type="video/mp4">
     </video>
-    <video class="video" autoplay loop muted preload playsinline>
+  </div>
+
+  <!-- Video 2 (Square) -->
+  <div class="video-container square">
+    <video class="video" autoplay loop muted playsinline>
       <source src="static/videos/high-res-teaser/2.mp4" type="video/mp4">
     </video>
   </div>
-  <!-- Rectangular Videos -->
-  <div class="rect-videos">
-    <video class="video" autoplay loop muted preload playsinline>
+
+  <!-- Video 3 (Rectangular) -->
+  <div class="video-container rect">
+    <video class="video" autoplay loop muted playsinline>
       <source src="static/videos/high-res-teaser/3.mp4" type="video/mp4">
     </video>
-    <video class="video" autoplay loop muted preload playsinline>
+  </div>
+
+  <!-- Video 4 (Rectangular) -->
+  <div class="video-container rect">
+    <video class="video" autoplay loop muted playsinline>
       <source src="static/videos/high-res-teaser/4.mp4" type="video/mp4">
     </video>
-    <video class="video" autoplay loop muted preload playsinline>
+  </div>
+
+  <!-- Video 5 (Rectangular) -->
+  <div class="video-container rect">
+    <video class="video" autoplay loop muted playsinline>
       <source src="static/videos/high-res-teaser/5.mp4" type="video/mp4">
     </video>
   </div>
 </div>
 <!-- Inserted Code Ends Here -->
+
 
 
       <h3 class="subtitle is-3" style="text-align: center;">Pose-conditioned video</h4>
